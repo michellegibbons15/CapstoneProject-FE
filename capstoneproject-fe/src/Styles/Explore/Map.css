@@ -1,0 +1,27 @@
+.Map-container{
+  position: relative;
+    display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+.loading-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  background-color: #ddd;
+  z-index: 2;
+}
+
+.progress {
+  width: 0%;
+  height: 100%;
+  background-color: #5174e6;
+  animation: loading 2s infinite;
+}
+@keyframes loading {
+  0% { width: 0%; }
+  50% { width: 50%; }
+  100% { width: 100%; }
+}

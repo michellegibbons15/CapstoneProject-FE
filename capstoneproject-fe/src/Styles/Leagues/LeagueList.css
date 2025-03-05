@@ -1,0 +1,72 @@
+.league-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.74);
+  flex-wrap: wrap;
+  padding: 30px;
+  margin: 0 auto;
+  width: 60vw;
+  height: auto;
+}
+
+/* Header styling */
+.league-container h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* filter */
+.filters-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 100%; 
+  max-width: 800px;
+}
+
+.filter {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.filter label {
+  margin-bottom: 5px;
+}
+
+.filter select {
+  padding: 5px;
+  font-size: 16px;
+}
+
+/* League list container */
+.league-lists {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 20px; 
+  width: 100%;
+  max-width: 800px;
+  height: auto; 
+}
+
+/* Individual league items */
+.league-item {
+  background-color: #f0f0f0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* League list styling */
+.league-item ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.league-item li {
+  margin-bottom: 10px;
+}

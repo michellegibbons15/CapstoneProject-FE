@@ -1,0 +1,36 @@
+/* welcome */
+.Welcome {
+  margin-left: 146px;
+  width: 83.97%;
+  display: flex;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.74);
+  padding: 5px;
+}
+.WelcomeContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.profile {
+  margin-top: 5px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+h1 {
+  margin: 0;
+  padding: 10px;
+}
+h4 {
+  text-align: center;
+  font-size: 17px;
+  margin: 0;
+}
+h4:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

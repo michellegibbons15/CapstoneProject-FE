@@ -1,0 +1,111 @@
+/* log in, sign up, forgot password */
+.LoginContainer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.form-container{
+    display: none;
+}
+.active{
+    display:block;
+}
+#loginForm, #signupForm, #forgotPasswordForm{
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    transition: transform 0.2s;
+    width: 300px;
+    text-align: center;
+
+}
+
+#loginForm label, #signupForm label, #forgotPasswordForm label {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: left;
+    color: #555;
+    font-weight: bold;
+}
+
+#loginForm input, #signupForm input, #forgotPasswordForm input {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#loginForm button, #signupForm button, #forgotPasswordForm button{
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background-color: rgb(1,80,1);
+    width: 100%;
+    font-size: 16px;
+}
+#loginForm label.rememberMe {
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+    cursor: pointer;
+  }
+#loginForm input.checkbox{
+    width: 18px;
+    height: 18px;
+    accent-color: blue;
+    margin-right: 5px;
+}
+
+/* Style for Forgot Password link */
+.LogIn p {
+    text-align: center;
+}
+
+.LogIn p a {
+    text-decoration: none;
+    color: blue;
+}
+
+.LogIn p a:hover {
+    text-decoration: underline;
+}
+
+/* Style for the Log Out Successful message modal */
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.932);
+    color: rgb(1,80,1);
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    border-radius: 10px;
+    border: 2px, solid, black;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+    font-size: 50px;
+  }
+  
+  /* When modal is active (for showing it) */
+  .modal.show {
+    display: block; /* Makes the modal visible */
+  }

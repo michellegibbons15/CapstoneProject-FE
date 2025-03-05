@@ -1,0 +1,34 @@
+ /* Centering the Blurb */
+ .homepage {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 40%;
+  }
+  
+  .blurb {
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 25px;
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+
+   /* Buttons */
+   .LandingButton {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .Landing-btn {
+    background-color: rgb(1, 80, 1);
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 20px;
+  }
+  
+  .btn:hover {
+    background-color: rgb(93, 136, 93);
+  }

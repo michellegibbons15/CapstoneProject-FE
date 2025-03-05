@@ -1,0 +1,27 @@
+/* Slideshow Container */
+.slideshow-container {
+    width: 90%; 
+    max-width: 3000px; 
+    height: 800px; 
+    margin: 20px auto; 
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    }
+    .slides {
+      display: none;
+      transition: opacity 1s ease-in-out;
+    }
+    .slides.active {
+      display: block;
+      opacity: 1;
+    }
+    /* Slideshow Images */
+    .slide-img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+  
+    }
+    
+  

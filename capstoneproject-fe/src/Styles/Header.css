@@ -1,0 +1,45 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgb(1, 80, 1);
+    color: white;
+  }
+  .logo img{
+      max-height: 100px;
+      width:auto;
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .search-container button {
+    float: right;
+    padding: 5px 5px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  .nav input[type="text"] {
+    padding: 5px;
+  }
+  .nav li {
+    margin: 0 1rem;
+    color: white;
+    font-size: 30px;
+  }
+  /* .nav a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  } */
+  .profile-icon {
+    margin-left: auto;
+    font-size: 50px;
+  }
+  .profile-icon:hover {
+    cursor: pointer;
+  }
