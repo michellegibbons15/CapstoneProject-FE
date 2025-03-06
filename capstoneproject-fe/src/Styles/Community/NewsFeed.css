@@ -45,14 +45,15 @@
 }
 
 .Post-List {
-  margin-top: 20px;
-  padding: 20px;
+  position: relative;
+  padding: 15px;
   background: white;
   color: black;
-  border-radius: 8px;
+  border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  max-width: 100%; /* Make posts take full width */
-  width: 90%;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
 }
 .Post-List p {
   margin: 5px 0;
@@ -70,7 +71,7 @@
 }
 
 .Post-List p:nth-child(3) {
-  font-size: 20px; /* Bigger post content */
+  font-size: 20px; 
   padding: 10px;
   border: 1px solid black;
   border-radius: 8px;
@@ -82,7 +83,7 @@
 .Comment-section {
   margin-top: 10px;
   width: 100%;
-  padding-left: 30px;
+  padding: 10px 0;
 }
 
 .Comment-section p {
@@ -108,10 +109,74 @@
   font-weight: bold;
 }
 .Comment-section input {
-  width: 80%;
-  height: 30px;
+  width: 100%;
+  border: none;
   padding: 8px;
-  border: 1px solid #ccc;
+  border-radius: 20px;
+  background: #f1f1f1;
+  margin-top: 5px;
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.menu-icon {
+  cursor: pointer;
+  font-size: 18px;
+  padding: 5px;
+}
+
+.menu-dropdown {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
-  font-size: 14px;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.menu-dropdown button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-align: left;
+}
+
+.menu-dropdown button:hover {
+  background: #f0f0f0;
+}
+
+/* Adjust post layout */
+.Post-List {
+  position: relative;
+  padding: 15px;
+  border-radius: 10px;
+  background: white;
+  width: 100%;
+  max-width: 600px; /* Limit width */
+  margin: 20px auto;
+}
+
+/* Improve comments */
+.Comment-section {
+  width: 100%;
+  padding: 10px 0;
+}
+
+.Comment-section input {
+  width: 100%;
+  border: none;
+  padding: 8px;
+  border-radius: 20px;
+  background: #f1f1f1;
+  margin-top: 5px;
 }
