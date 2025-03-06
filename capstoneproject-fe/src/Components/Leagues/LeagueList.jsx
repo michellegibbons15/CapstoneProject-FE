@@ -2,24 +2,24 @@ import React, { useState } from "react";
 import "../../Styles/Leagues/LeagueList.css";
 
 const leagues = [
-  { name: "Central Virginia Soccer Association - CVSA", sport: "soccer", type: "rec", division: "adult" },
-  { name: "Sports Center of Richmond - SCOR", sport: "soccer", type: "rec", division: ["adult", "youth"] },
-  { name: "XL Sports", sport: "soccer", type: "rec", division: ["youth", "adult"] },
+  { name: "Central Virginia Soccer Association - CVSA", sport: "soccer", type: "rec", division: "adult", link: "http://cvsasoccer.net/"},
+  { name: "Sports Center of Richmond - SCOR", sport: "soccer", type: "rec", division: ["adult", "youth"], link: "https://scor-richmond.com/"},
+  { name: "XL Sports", sport: "soccer", type: "rec", division: ["youth", "adult"], link:"https://www.xlrichmond.com/"},
   { name: "YMCA", sport: "soccer", type: "rec", division: "youth" },
-  { name: "FC Richmond", sport: "soccer", type: "travel", division: "youth" },
-  { name: "Richmond Strickers", sport: "soccer", type: "travel", division: "youth" },
-  { name: "Richmond Kickers", sport: "soccer", type: "travel", division: "adult" },
-  { name: "Bon Air Basketball", sport: "basketball", type: "rec", division: "youth" },
+  { name: "FC Richmond", sport: "soccer", type: "travel", division: "youth", link:"https://www.fcrichmond.com/"},
+  { name: "Richmond Strickers", sport: "soccer", type: "travel", division: "youth", link: "https://www.richmondstrikers.com/landing/index"},
+  { name: "Richmond Kickers", sport: "soccer", type: "travel", division: "youth", link: "https://www.richmondkickersyouth.com/" },
+  { name: "Bon Air Basketball", sport: "basketball", type: "rec", division: "youth", link: "https://www.bonairbasketball.net/"},
   { name: "Big Ben's Home Court", sport: "basketball", type: "rec", division: "adult" },
-  { name: "Richmond Volleyball Club - RVC", sport: "volleyball", type: "rec", division: ["adult", "youth"] },
+  { name: "Richmond Volleyball Club - RVC", sport: "volleyball", type: "rec", division: ["adult", "youth"], link: "https://www.rvc.net/" },
   { name: "XZone Volleyball Club", sport: "volleyball", type: "rec", division: "youth" },
-  { name: "Relentless", sport: "field hockey", type: "rec", division: "youth" },
-  { name: "Panthers", sport: "field hockey", type: "travel", division: "youth" },
-  { name: "Performance PickleBall", sport: "pickleball", type: "rec", division: "adult" },
-  { name: "River City Sport & Social Club", sport: "social clubs", type: "rec", division: "adult" },
-  { name: "NOVA Swim", sport: "swimming", type: "rec", division: "youth" },
-  { name: "ULAX", sport: "lacrosse", type: "rec", division: "adult" },
-  { name: "Fusion Lacrosse", sport: "lacrosse", type: "travel", division: "youth" },
+  { name: "Relentless", sport: "field hockey", type: "rec", division: "youth", link: "https://relentlessfieldhockey.com/" },
+  { name: "Panthers", sport: "field hockey", type: "travel", division: "youth", link:"https://www.panthersunitedfh.com/" },
+  { name: "Performance PickleBall", sport: "pickleball", type: "rec", division: "adult", link: "https://ppbrva.com/" },
+  { name: "River City Sport & Social Club", sport: "social clubs", type: "rec", division: "adult", link:"https://www.rivercityssc.com/" },
+  { name: "NOVA Swim", sport: "swimming", type: "rec", division: "youth",link: "https://novaswim.org/"},
+  { name: "Poseidon Swimming", sport: "swimming", type: "rec", division: "youth",link: "https://www.gomotionapp.com/team/vsps/page/home"},
+  { name: "Fusion Lacrosse", sport: "lacrosse", type: "travel", division: "youth", link: "https://www.playfusionlax.com/copy-of-philly-youth-club-teams-1" },
   
 ];
 
@@ -84,7 +84,11 @@ const LeagueList = () => {
             <div key={index} className="league-item">
               <h3>{league.sport.charAt(0).toUpperCase() + league.sport.slice(1)}:</h3>
               <ul>
-                <li>{league.name}</li>
+                <li>
+                <a href={league.link} target="_blank" rel="noopener noreferrer">
+                {league.name}
+                  </a>
+                </li>
               </ul>
             </div>
           ))
