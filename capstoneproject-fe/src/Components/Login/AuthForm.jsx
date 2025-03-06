@@ -41,7 +41,6 @@ export default function AuthForms() {
       const data = await response.json();
       if (response.ok) {
         console.log("Login successful:", data);
-        localStorage.setItem("token", data.token);
         navigate("/dashboard"); // Redirect to dashboard after login
       } else {
         setError(data.message || "Login failed.");
