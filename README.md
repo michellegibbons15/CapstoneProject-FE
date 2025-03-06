@@ -1,1 +1,1 @@
-# CapstoneProject-FE
+See the capstoneproject-fe folder for the README.md
