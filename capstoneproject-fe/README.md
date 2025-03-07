@@ -27,19 +27,23 @@ PlayRVA is an interactive app that provides information on sports facilities, le
    git clone https://github.com/michellegibbons15/capstoneproject-fe.git
 
 2. Naviaget to the project directory
+   
    cd capstoneproject-fe
+   
    cd capstoneproject-fe (should be the folder within this repo)
 
-3. Install dependencies - running this command will install the required dependencies into the package.json file
+4. Install dependencies - running this command will install the required dependencies into the package.json file
+   
     npm install
  
-4. Set up environment variables: Create a .env file in the root     
+6. Set up environment variables: Create a .env file in the root     
     directory and add necessary environment variables (e.g., API URLs, database credentials).
 
-5. Run the development server:
+7. Run the development server:
+   
     npm run dev
 
-6. Visit the app in your browser: Open http://localhost:5173 in your browser.
+9. Visit the app in your browser: Open http://localhost:5173 in your browser.
 
 **Usage Instructions**
 - Login/Signup: Use the login/signup page to create or access your account.
@@ -51,14 +55,18 @@ PlayRVA is an interactive app that provides information on sports facilities, le
 **File Structure**
 Here’s a general overview of the source folder structure where all the information is held:
 
+```
 src/
-├── assets/          # Images
-├── components/      # React components
-├── pages/           # React pages (Dashboard, Explore, etc.)
-├── routes/          # Routes
-├── styles/          # Styles for each component/page
-├── App.css/         # Global styling
-├── App.jsx/         # Main app component, root of the app
-├── index.css/       # Global styling
-├── main.jsx/        # Entry point for the React app
+├── assets/             # Images
+├── components/         # React components
+├── pages/              # React pages (Dashboard, Explore, etc.)
+├── routes/             # Routes
+├── styles/             # Styles for each component/page
+├── App.css/            # Global styling
+├── App.jsx/            # Main app component, root of the app
+├── index.css/          # Global styling
+├── main.jsx/           # Entry point for the React app
+
+```
+
 
